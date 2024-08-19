@@ -3,8 +3,8 @@ main{
     height: 400px;
     overflow: auto;
     border: 1px solid ;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 article{
     background: rgb(234, 158, 70);
