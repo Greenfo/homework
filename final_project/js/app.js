@@ -157,6 +157,11 @@
         }
     };
     //hero
+    new Swiper ('.products__item-slider', {
+        pagination:{
+            el:'.products__item-pagination',
+        },
+    })
     new Swiper ('.hero__inner', {
         navigation: {
             nextEl: '.hero__next',
@@ -194,7 +199,7 @@
                     },
                 },
             },
-        });
+    });
     //products
     resizableSwiper(
         '(max-width:768px)',

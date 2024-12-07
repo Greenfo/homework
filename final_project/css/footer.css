@@ -5,8 +5,7 @@
 .footer__inner{
     display: flex;
     justify-content: space-between;
-    padding-top: 140px;
-    padding-bottom: 120px;
+    
 }
 
 .footer__content{
@@ -15,6 +14,9 @@
     max-width: 610px;
     width: 100%;
     gap: 15px;
+    padding-top: 140px;
+    padding-bottom: 120px;
+    position: relative;
 }
 
 .footer__politic{
@@ -37,6 +39,8 @@
 }
 
 .footer__contact {
+    padding-top: 140px;
+    padding-bottom: 120px;
 }
 .footer__contact span{
     display: block;

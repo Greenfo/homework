@@ -97,7 +97,7 @@
     transform: translateY(40%);
     z-index: -1;
     opacity: 0;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 14px 29px 0px;
 }
 .products__item:hover {
     transform: scale(1.1) translateY(-10px);
@@ -107,8 +107,24 @@
     opacity: 1;
 }
 
-.products__item-flag {
+.products__item-pagination.swiper-pagination{
 
+
+}
+.products__item-pagination .swiper-pagination-bullet{
+    border: none;
+    width: 6px;
+    height: 6px;
+    background: var(--background-black-color);
+
+}
+.products__item-pagination .swiper-pagination-bullet::before{
+    content: none;
+}
+
+
+.products__item-flag {
+    z-index: 2;
     padding: 4px 20px 6px 10px;
     color: var(--orange);
     font-size: 15px;
@@ -185,6 +201,7 @@
     top: 30px;
     right: 30px;
     transition: var(--transition);
+    z-index: 2;
 }
 .products__item-like--active #Heart{
     fill-opacity: 1;
@@ -810,7 +827,7 @@
     justify-content: center;
     gap: 20px;
     position: fixed;
-    bottom: 30%;
+    bottom: 40%;
     right: 15%;
     height: 90px;
     max-width: 262px;
@@ -848,7 +865,16 @@
 .up-button__arrow svg{
     transform: rotate(-90deg);
 }
+@media (max-width:1000px) {
+    .up-button{
+        
+        bottom: 5%;
+        right: 10%;
+        max-width: none;
+        width: auto;
 
+    }
+}
 @media (max-width: 768px) {
     .up-button{
         background: inherit;
