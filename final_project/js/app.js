@@ -191,7 +191,7 @@
                 fill:'row'
             },
             breakpoints:{
-                768:{
+                769:{
                     slidesPerView:5,
                     grid:{
                         rows:2,
@@ -207,6 +207,9 @@
         {
             slidesPerView:1,
             spaceBetween:20,
+            pagination:{
+                el: '.products__pagination',
+            },
             breakpoints:{
                 501:{
                     slidesPerView:2,
@@ -222,13 +225,16 @@
         // Optional parameters
         slidesPerView:1,
         spaceBetween:20,
-
+        centeredSlides:true,
         // If we need pagination
         pagination: {
             el: '.testimonials__pagination',
         },
         breakpoints:{
-            768:{
+            600:{
+                slidesPerView:1.5,
+            },
+            769:{
                 slidesPerView:1.5,
                 centeredSlides:true,
             },

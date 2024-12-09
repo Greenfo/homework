@@ -465,6 +465,19 @@
 .burger__item-catalog{
     background: inherit;
     font-size: 16px;
+    position: relative;
+}
+.burger__item-catalog::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: transparent transparent var(--orange) transparent;
+    right: -60px;
+    top: 10px;
+    background: var(--background-black-color);
+    transform: rotate(180deg);
 }
 .header__search-burger{
     display: none;
@@ -780,14 +793,9 @@
         max-width: none;
     }
     .hero__button{
+        width: calc(100% - 40px);
         max-width: none;
-        margin-left: 0;
-    }
-    .hero__button::after{
-        display: none;
-    }
-    .hero__button::before{
-        display: none;
+        margin-inline: auto;
     }
     .hero__text{
         width: 100%;

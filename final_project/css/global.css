@@ -170,3 +170,30 @@
 .main__brand{
     padding-bottom: 120px;
 }
+
+@media (max-width: 768px) {
+    .main__products{
+        padding: 80px 0;
+    }
+    
+    .main__catalog{
+        padding-bottom: 80px;
+    }
+    
+    .main__banners{
+        padding-bottom: 80px;
+    }
+    .main__about{
+        padding-bottom: 80px;
+    }
+    
+    .main__contact{
+        padding-bottom: 160px;
+    }
+    .main__testimonials{
+        padding-bottom: 80px;
+    }
+    .main__brand{
+        padding-bottom: 80px;
+    }
+}
