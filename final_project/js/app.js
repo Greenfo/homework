@@ -162,7 +162,7 @@
             el:'.products__item-pagination',
         },
     })
-    new Swiper ('.hero__inner', {
+    new Swiper ('.hero__slider', {
         navigation: {
             nextEl: '.hero__next',
             prevEl: '.hero__prev',
@@ -191,6 +191,14 @@
                 fill:'row'
             },
             breakpoints:{
+                450:{
+                    spaceBetween:40,
+                    slidesPerView: 3,
+                    grid:{
+                        rows:2,
+                        fill:'row'
+                    },
+                },
                 769:{
                     slidesPerView:5,
                     grid:{
