@@ -191,7 +191,7 @@
                 fill:'row'
             },
             breakpoints:{
-                450:{
+                451:{
                     spaceBetween:40,
                     slidesPerView: 3,
                     grid:{
@@ -200,6 +200,7 @@
                     },
                 },
                 769:{
+                    spaceBetween:40,
                     slidesPerView:5,
                     grid:{
                         rows:2,
